@@ -19,11 +19,12 @@ body, html {
     align-items: center;
     height: 400px;
     min-height: 105px;
-    background-image: url(https://images.unsplash.com/photo-1442606383395-175ee96ed967?q=80&fm=jpg&s=5c8c74be9bc91b47c79a1aaf92264be5);
+    /*background-image: url(https://images.unsplash.com/photo-1442606383395-175ee96ed967?q=80&fm=jpg&s=5c8c74be9bc91b47c79a1aaf92264be5);*/
+    background-image: url('../img/header-2.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
     .header-wrapper h1 {
