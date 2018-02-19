@@ -5,8 +5,17 @@
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 
+@foreach (var book in Model)
+{
+    <section class="book-info">
+        <div class="wrapper">
+            <h3>@book.Name</h3>
+            <p>@book.Description</p>
+        </div>
+    </section>
+}
 
-<div class="container">
+@*<div class="container">
     <div class="row">
         <div class="col-lg-12">
             @foreach (var book in Model)
@@ -15,9 +24,8 @@
                     <p>@book.Name</p>
                     <p>@book.Author</p>
                     <p>@book.Year</p>
-                    <p>@book.Description</p>
                 </div>
             }
         </div>
     </div>
-</div>
+</div>*@

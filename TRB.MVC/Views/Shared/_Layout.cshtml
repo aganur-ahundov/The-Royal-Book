@@ -18,13 +18,27 @@
             </div>
         </div>
     </header>
+    <div class="search-box">
+        <div class="title-container">
+        </div>
+        <fieldset class="search-field-container">
+            <input class="search-field" type="text" placeholder="Search" />
+            <div class="icons-container">
+                <div class="icon-search"></div>
+                <div class="icon-close">
+                    <div class="x-up"></div>
+                    <div class="x-down"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
     <div id="content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - The Royal Book</p>
-        </footer>
     </div>
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - The Royal Book</p>
+    </footer>
 
     @* SCRIPTS SECTION *@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
