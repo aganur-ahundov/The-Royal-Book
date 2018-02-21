@@ -1,11 +1,22 @@
-﻿@model IEnumerable<TRB.BLL.Models.BookListItem>
+﻿@model TRB.BLL.Models.HomepageViewModel
 
 @{
     ViewBag.Title = "Homepage";
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-@foreach (var book in Model)
+<div class="category-list">
+    @foreach (var category in Model.Categories)
+    {
+        <div class="category">
+            <img src="@category.CategoryImage" />
+            <h3>@category.CategoryName</h3>
+        </div>
+    }
+</div>
+
+
+@foreach (var book in Model.Books)
 {
     <section class="book-info">
         <div class="wrapper">

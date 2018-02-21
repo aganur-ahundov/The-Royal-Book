@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="Helpers\DBHelper.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\HomepageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\BooksProvider.cs" />
+    <Compile Include="Providers\CategoriesProvider.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
