@@ -1,0 +1,12 @@
+﻿@using TRB.BLL.Models;
+@model IEnumerable<Category>
+
+<div class="category-list">
+    @foreach (var category in Model)
+    {
+        <div class="category">
+            <img src="@category.CategoryImage" />
+            <h4>@category.CategoryName</h4>
+        </div>
+    }
+</div>

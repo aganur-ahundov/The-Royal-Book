@@ -39,4 +39,23 @@
             }
         </div>
     </div>
-</div>*@
+</div>*@﻿@model TRB.BLL.Models.HomepageViewModel
+
+@{
+    ViewBag.Title = "Homepage";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("/Views/Home/_pv_CategoryList.cshtml", Model.Categories)
+
+<div class="homepage-content text-center">
+    <p>We are The Royal Book</p>
+    <div class="info-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique vestibulum facilisis. Integer ut sagittis justo. Nam id posuere ligula. Aliquam dictum ipsum at erat lobortis lobortis. Quisque faucibus neque nisi, eu faucibus lectus laoreet et. Ut eget ligula iaculis, ornare tellus et, sagittis ligula. Aliquam erat volutpat. Etiam pellentesque, massa id mattis efficitur, odio velit suscipit neque, vel accumsan odio libero lacinia dui. Curabitur id fringilla magna, et consequat magna. Pellentesque pharetra libero lorem, ut ultrices velit pharetra eget. Aenean vitae libero bibendum, molestie enim nec, hendrerit nunc. Nulla facilisi. In pellentesque accumsan dictum. Pellentesque nisl dolor, varius vitae enim id, accumsan egestas mauris. Ut metus lectus, vulputate ut diam nec, pellentesque blandit nibh.
+
+        Pellentesque blandit eu tortor quis sagittis. Maecenas sollicitudin lacus velit, ut tincidunt lacus dictum et. Morbi dignissim est ante, sit amet bibendum orci rutrum in. Duis scelerisque, ex non mattis semper, lectus dolor accumsan sapien, id auctor nisi nisi vel quam. Etiam justo diam, euismod quis faucibus sit amet, placerat eu dolor. Morbi tincidunt, lacus vitae ultrices sagittis, ex diam suscipit erat, cursus mollis sem ipsum ut nulla. Sed non mattis ex. Praesent nec felis est. Praesent aliquet, libero eget vehicula egestas, ipsum velit elementum arcu, vitae dapibus arcu est ut magna. Praesent porttitor faucibus iaculis. In aliquam volutpat imperdiet. Vivamus non elementum est. In a cursus felis, accumsan aliquam nulla. Phasellus elementum augue neque, non tempus elit facilisis sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sem lacus, dignissim non fringilla a, fermentum tincidunt est.
+    </div>
+</div>
+
+
+@Html.Partial("/Views/Forms/_pv_ContactUs.cshtml")
